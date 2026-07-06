@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     candle.style.animationDuration = secs + "s";
     burnTimer = setTimeout(() => toggleBtn.click(), secs * 1000);
 
-    // ช่วงไฟตีบ: 20% สุดท้ายของเวลา แต่ไม่ต่ำกว่า 2 วิ ไม่เกิน 8 วิ
-    const dyingMs = Math.min(8000, Math.max(2000, secs * 200));
+    // ช่วงไฟตีบ: 20% สุดท้ายของเวลา แต่ไม่ต่ำกว่า 2 วิ ไม่เกิน 6 วิ
+    const dyingMs = Math.min(6000, Math.max(2000, secs * 200));
     dyingTimer = setTimeout(() => document.body.classList.add("dying"), secs * 1000 - dyingMs);
 
     // ช่องตั้งเวลากลายเป็นตัวนับถอยหลังจนกว่าจะดับ
