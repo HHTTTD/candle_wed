@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="holder">
+    <div class="candle">
+      <div class="blinking-glow container"></div>
+      <div class="glow container"></div>
+      <div class="flame container"></div>
+      <div class="thread"></div>
+    </div>
+  </div>
+  <div id="controls">
+    <div id="mode-switch">
+      <label><input type="radio" name="mode" value="normal" checked><span>จุดปกติ</span></label>
+      <label><input type="radio" name="mode" value="timed"><span>จับเวลา</span></label>
+    </div>
+    <div id="duration">
+      <label><input type="number" id="dur-hrs" value="0" min="0" max="23"><span>ชั่วโมง</span></label>
+      <span class="colon">:</span>
+      <label><input type="number" id="dur-mins" value="1" min="0" max="59"><span>นาที</span></label>
+      <span class="colon">:</span>
+      <label><input type="number" id="dur-secs" value="0" min="0" max="59"><span>วินาที</span></label>
+    </div>
+  </div>
+  <button id="toggle-btn" type="button">จุดเทียน</button>
+  <script src="script.js"></script>
+</body>
+</html>
